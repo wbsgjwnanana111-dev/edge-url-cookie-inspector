@@ -1,0 +1,158 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #f5f7f8;
+  color: #172026;
+}
+
+body {
+  width: 420px;
+  min-height: 520px;
+  margin: 0;
+  background: #f5f7f8;
+}
+
+button {
+  border: 1px solid #cfd7dd;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #172026;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  background: #eef4f5;
+}
+
+.shell {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+#status {
+  margin: 4px 0 0;
+  color: #66737c;
+  font-size: 12px;
+}
+
+#refreshButton {
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+}
+
+.section {
+  display: grid;
+  gap: 8px;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: #39464e;
+  font-size: 12px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.count {
+  min-width: 24px;
+  border-radius: 999px;
+  background: #dcebea;
+  color: #1a5954;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 22px;
+  text-align: center;
+}
+
+textarea,
+pre {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  border: 1px solid #cfd7dd;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #172026;
+  font-family: Consolas, "Cascadia Mono", monospace;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+textarea {
+  min-height: 86px;
+  padding: 10px;
+  resize: vertical;
+}
+
+pre {
+  min-height: 260px;
+  max-height: 320px;
+  overflow: auto;
+  padding: 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.footer button {
+  min-height: 34px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  body {
+    background: #11181c;
+    color: #eaf0f2;
+  }
+
+  button,
+  textarea,
+  pre {
+    border-color: #314047;
+    background: #172126;
+    color: #eaf0f2;
+  }
+
+  button:hover {
+    background: #203039;
+  }
+
+  #status {
+    color: #9daab1;
+  }
+
+  .label {
+    color: #c5d0d5;
+  }
+
+  .count {
+    background: #214743;
+    color: #b8f1e9;
+  }
+}

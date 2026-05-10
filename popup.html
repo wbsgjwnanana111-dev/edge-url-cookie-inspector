@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>URL Cookie Inspector</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="header">
+        <div>
+          <h1>URL Cookie Inspector</h1>
+          <p id="status">正在读取当前标签...</p>
+        </div>
+        <button id="refreshButton" type="button" title="刷新">↻</button>
+      </header>
+
+      <section class="section">
+        <div class="label">当前 URL</div>
+        <textarea id="urlOutput" readonly spellcheck="false"></textarea>
+      </section>
+
+      <section class="section">
+        <div class="sectionTitle">
+          <span class="label">Cookies</span>
+          <span id="cookieCount" class="count">0</span>
+        </div>
+        <pre id="cookieOutput">[]</pre>
+      </section>
+
+      <footer class="footer">
+        <button id="copyUrlButton" type="button">复制 URL</button>
+        <button id="copyCookiesButton" type="button">复制 Cookies JSON</button>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
