@@ -1,0 +1,15 @@
+{
+  "name": "edge-url-cookie-inspector",
+  "version": "0.1.0",
+  "private": true,
+  "bin": "server.js",
+  "pkg": {
+    "assets": [
+      "assets/**/*"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  }
+}
